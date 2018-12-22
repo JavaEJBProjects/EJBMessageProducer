@@ -1,0 +1,4 @@
+rootProject.name = 'EJBMessageProducerApp'
+include 'MessageProducerEJB'
+include 'MessageProducerWebClient'
+include 'MessageProducerApp'

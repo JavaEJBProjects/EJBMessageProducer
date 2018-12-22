@@ -1,0 +1,33 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+buildscript {
+	ext {
+		version = '2.0.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		
+	}
+}
+
+
+allprojects {
+  //Put instructions for all projects
+  task hello << { task -> println "I'm $task.project.name" }
+}
+
+subprojects {
+  //Put instructions for each sub project
+  apply plugin: "java"
+  repositories {
+      mavenCentral()
+  }
+  group = 'com.javalearning.spring'
+  sourceCompatibility = 1.7
+  version = '0.0.1-SNAPSHOT'
+  
+}
