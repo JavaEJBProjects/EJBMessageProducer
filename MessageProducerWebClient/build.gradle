@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+
+buildscript {
+	ext {
+		appRelversion = '0.0.1.RELEASE'
+	}
+}
+group = 'com.java.coreJava'
+version = '0.0.1-SNAPSHOT'
+
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	compile('javax.ejb:ejb-api:3.0')
+	compile('javax.jms:jms-api:1.1-rev-1')
+	compile('javax.servlet:javax.servlet-api:4.0.1')
+	compile project(':MessageProducerEJB')
+}
