@@ -5,15 +5,12 @@ import java.io.PrintWriter;
 
 import javax.ejb.EJB;
 import javax.jms.JMSException;
-import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.text.AbstractDocument.Content;
-
 import com.java.ejb.authorizer.RequestProcessorRemote;
 import com.java.ejb.authorizer.response.ResponseSender;
 import com.java.ejb.authorizer.vo.RequestVO;

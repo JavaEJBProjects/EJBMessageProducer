@@ -10,8 +10,5 @@
   <module>
     <ejb>MessageProducerEJB-0.0.1-SNAPSHOT.jar</ejb>
   </module>
-  <module>
-    <ejb>application.properties</ejb>
-  </module>
   <library-directory>lib</library-directory>
 </application>
