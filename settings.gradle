@@ -1,4 +1,4 @@
-rootProject.name = 'EJBMessageProducerApp'
+rootProject.name = 'EJBMessageProducer'
 include 'MessageProducerEJB'
 include 'MessageProducerWebClient'
 include 'MessageProducerApp'

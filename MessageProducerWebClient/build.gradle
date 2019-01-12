@@ -2,6 +2,10 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'war'
 
+configurations.all {
+ transitive = false
+}
+
 buildscript {
 	ext {
 		appRelversion = '0.0.1.RELEASE'
@@ -15,7 +19,9 @@ repositories {
 	mavenCentral()
 }
 
-
+war {
+    classpath = classpath.filter { !it.name.contains('MessageProducerEJB') }
+}
 dependencies {
 	compile('javax.ejb:ejb-api:3.0')
 	compile('javax.jms:jms-api:1.1-rev-1')
